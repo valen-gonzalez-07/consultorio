@@ -68,18 +68,3 @@ input::placeholder, textarea::placeholder {
 .form-button:hover {
     background-color: #2e526b;
 }
-
-/* .form-button:hover {
-    background-color: #D9A441;
-    color: #223B4F;
-    border-left: 2px solid #223B4F; 
-} */
-
-
-
-/* .form-button:hover {
-    background-color: #D9A441;
-    color: #223B4F;
-    border-left: 2px solid #223B4F;
-    transform: translateY(-2px);
-} */
