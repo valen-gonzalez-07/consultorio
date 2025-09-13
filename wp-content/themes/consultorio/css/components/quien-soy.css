@@ -1,0 +1,41 @@
+
+.quien-soy{
+    background-color: var(--color-secundario);
+    margin: var(--margin-section);
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quien-soy-contenedor{
+    max-width: var(--rowWidth);   
+    margin: auto;     
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.foto-perfil{
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.quien-soy-contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--color-texto);
+}
+.quien-soy-contenido h2{
+    font-family: var(--font-principal);
+    font-size: 33px;
+    margin-bottom: 10px;
+    border-left: 3px solid var(--color-destacar);
+    padding-left: 15px;
+}
+.quien-soy-contenido p{
+    font-family: var(--font-secundaria);
+    text-align: justify;
+    font-size: 15px;
+}
