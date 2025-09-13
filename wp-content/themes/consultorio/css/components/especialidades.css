@@ -1,0 +1,68 @@
+.especialidades{
+    margin: var(--margin-section);
+    background-color: var(--color-secundario);
+}
+.especialidades-header{
+    width: 70%;
+    text-align: center;
+    margin: 35px auto;
+    padding: 25px 15px 0 15px;
+    color: var(--color-texto);
+}
+.especialidades-header h2{
+    font-family: var(--font-principal);
+    font-size: 33px;
+    margin-bottom: 10px;
+    border-left: 3px solid var(--color-destacar);
+    width: fit-content;
+    margin: 10px auto ;
+    padding: 0 15px;
+}
+.especialidades-header p{
+    font-family: var(--font-secundaria);
+}
+.especialidad{
+    display: flex;
+    height: 500px;
+}
+.especialidad figure{
+    width: 55%;
+    height: 100%;
+    overflow: hidden;
+}
+.especialidad-urologia-img, .especialidad-sexologia-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.especialidad-sexologia-img{
+    object-position: bottom;
+}
+.especialidad-contenido{
+    width: 45%;
+    padding: 25px 40px;
+    color: var(--color-texto);
+    background-color: var(--color-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.especialidad-contenido h3 {
+    font-family: var(--font-principal);
+    font-size: 28px;
+}
+.especialidad-contenido p {
+    font-family: var(--font-secundaria);
+}
+.especialidad-lista{
+    margin-left: 25px;
+}
+.especialidad-lista li{
+    list-style: none;
+    font-family: var(--font-secundaria);
+    border-left: 3px solid var(--color-destacar);
+    padding: 5px 10px;
+    margin: 10px ;
+}
+
