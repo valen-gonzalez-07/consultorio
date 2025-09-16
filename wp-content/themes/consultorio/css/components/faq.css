@@ -112,11 +112,6 @@
     }
 }
 
-@media (max-width: 950px) {
-    .faq-item-container{
-        /* width: 85%; */
-    }
-}
 @media (max-width: 900px) {
 
     .faq-item-container {
