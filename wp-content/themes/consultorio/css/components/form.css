@@ -17,7 +17,7 @@
     align-items: center;
 }
 
-h2, div form textarea, .form-input{
+/* h2, div form textarea, .form-input{
     border-left: 2px solid #D9A441;
     border-bottom: 0px;
     border-right: 0px;
@@ -26,15 +26,15 @@ h2, div form textarea, .form-input{
     font-size: 16px;
     text-align: center;
     width: 400px;
-}
+} */
 
-h2{
+/* h2{
     padding-left: 10px;
     font-size: 22px;
     text-align: start;
     margin-top: 25px;
     margin-bottom: 10px;
-}
+} */
 
 div form textarea{
     background-color: #223B4F;

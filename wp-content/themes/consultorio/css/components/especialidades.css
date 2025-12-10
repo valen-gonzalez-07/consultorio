@@ -16,7 +16,7 @@
     border-left: 3px solid var(--color-destacar);
     width: fit-content;
     margin: 10px auto ;
-    padding: 0 15px;
+    padding-left:15px;
 }
 .especialidades-header p{
     font-family: var(--font-secundaria);
@@ -24,6 +24,9 @@
 .especialidad{
     display: flex;
     height: 500px;
+}
+.especialidad-figure-tablet{
+    display: none;
 }
 .especialidad figure{
     width: 55%;
@@ -45,7 +48,7 @@
     background-color: var(--color-principal);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     gap: 15px;
 }
 .especialidad-contenido h3 {
@@ -66,3 +69,94 @@
     margin: 10px ;
 }
 
+@media screen and (max-width: 1050px) {
+    .especialidad {
+        height: 450px;
+    }
+    .especialidad-contenido {
+        width: 45%;
+        padding: 20px 30px;
+        gap: 8px;
+    }
+    .especialidad-contenido h3 {
+        font-size: 26px;
+    }
+    .especialidad-contenido p {
+        font-size: 14px;
+    }
+    .especialidad-lista li {
+        font-size: 14px;
+    }
+    .especialidades-header{
+        width: 80%;
+    }
+    .especialidades-header h2{
+        font-size: 30px;
+    }
+    .especialidades-header p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    
+    .especialidad figure{
+        width: 100%;
+        height: 320px;
+        overflow: hidden;
+    }
+    .especialidad{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .sexologia{
+        flex-direction: column-reverse;
+    }
+    .especialidad-contenido {
+        width: 100%;
+        padding: 40px 30px;
+        gap: 15px;
+    }
+    .especialidad-contenido h3 {
+        font-size: 28px;
+    }
+    .especialidad-contenido p {
+        font-size: 15px;
+    }
+    .especialidad-lista {
+        margin-left: 15px;
+    }
+    .especialidad-lista li {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .especialidad figure {
+        height: 250px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .especialidades-header{
+        width: 90%;
+        padding: 25px 5px 0 5px;
+    }
+    .especialidades-header h2{
+        font-size: 28px;
+    }
+    .especialidades-header p{
+        font-size: 14px;
+    }
+    .especialidad-lista {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 350px) {
+    .especialidades-header{
+        width: 95%;
+    }
+    .especialidades-header h2{
+        font-size: 26px;
+    }
+}

@@ -6,7 +6,8 @@ get_header();
 ?>
 
 <section class="hero-banner">
-    <img src="<?php echo get_template_directory_uri(); ?>/templates/imgs/fondo-hero.jpg" alt="Descripción" class="hero-image">
+    <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/imgs/fondo-hero.jpg' ); ?>" alt="" class="hero-image">
+
     <div class="hero-content">
         <p>"Romper tabúes es el primer paso para mejorar tu salud."</p>
         <h1>Dr. Javier Lola</h1>
@@ -20,9 +21,9 @@ get_header();
     </header>
 
     <!-- Urología -->
-    <article class="especialidad">
+    <article class="especialidad urologia">
         <figure>
-            <img src="<?php echo get_template_directory_uri(); ?>/templates/imgs/urologia-portada-cortada.jpg"" alt="Imagen representativa de urología" class="especialidad-urologia-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/urologia-portada-cortada.jpg"" alt="Imagen representativa de urología" class="especialidad-urologia-img">
         </figure>
         <div class="especialidad-contenido">
             <h3>Urología</h3>
@@ -39,7 +40,7 @@ get_header();
     </article>
 
     <!-- Sexología -->
-    <article class="especialidad">
+    <article class="especialidad sexologia">
         <div class="especialidad-contenido">
             <h3>Sexología</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro molestiae architecto dolor odio minus quisquam similique non tenetur animi hic excepturi corrupti quis perferendis incidunt vero nam, ea obcaecati sapiente?</p>
@@ -53,15 +54,16 @@ get_header();
             </ul>
         </div>
         <figure>
-            <img src="<?php echo get_template_directory_uri(); ?>/templates/imgs/sexologia-portada.jpg" alt="Imagen representativa de sexología" class="especialidad-sexologia-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/sexologia-portada.jpg" alt="Imagen representativa de sexología" class="especialidad-sexologia-img">
         </figure>
     </article>
 </section>
 
 <section class="quien-soy">
+    <div class="nube-i"><figure><img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/nube-izquierda-2.png"" alt="" class=""></figure></div>
     <div class="quien-soy-contenedor">
         <figure>
-            <img src="<?php echo get_template_directory_uri(); ?>/templates/imgs/foto-perfil.jpg" alt="Foto del doctor" class="foto-perfil">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/foto-perfil.jpg" alt="Foto del doctor" class="foto-perfil">
         </figure>
         <div class="quien-soy-contenido">
             <h2>Quién soy?</h2>
@@ -80,6 +82,7 @@ get_header();
             </p>
         </div>
     </div>
+    <div class="nube-d"><figure><img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/nube-derecha-2.png"" alt="" class=""></figure></div>
     
 </section>
 
