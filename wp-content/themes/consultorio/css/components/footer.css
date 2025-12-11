@@ -1,0 +1,230 @@
+.a-footer{
+    all: unset;
+    cursor: pointer;
+}
+
+/* Contacto */
+.div-footer-container{
+    background-color: #223B4F;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.div-info-container{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.h4-contact-footer{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-family: var(--font-principal);
+    font-weight: 100;
+    padding-left: 10px;
+    border: none;
+    border-left: 2px solid var(--color-destacar);
+}
+
+.footer-li-styles{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-bottom: 10px;
+    font-family: var(--font-secundaria);
+
+}
+
+.img-footer{
+    width: 40px;
+    height: 40px;
+}
+
+.p-footer{
+    margin: auto 0;
+    margin-left: 20px;
+    font-family: var(--font-secundaria);
+}
+
+/* Redes */
+
+.redes-container{
+    margin: 0 auto;
+}
+
+.h4-redes-footer{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-family: var(--font-principal);
+    font-weight: 100;
+    padding-left: 10px;
+    border: none;
+    border-left: 2px solid var(--color-destacar);
+}
+
+.div-img-redes{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* boton y logo */
+
+.turno-logo-container{
+    width: 500px;
+    display: flex;
+}
+
+
+
+.img-logo-footer{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.div-button-logo{
+    margin: auto;
+}
+
+.button-footer{
+    all: unset;
+    width: 201px;
+    height: 57px;
+    background-color: #5E7F79;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px;
+    transition: all 0.2s ease;
+    font-family: var(--font-secundaria);
+}
+
+.button-footer:hover{
+    background-color: #779892;
+}
+
+/* QUERYS */
+
+@media (max-width: 1280px) {
+    .div-info-container {
+        width: 300px;
+    }
+
+    .redes-container {
+        width: 200px;
+    }
+
+    .turno-logo-container {
+        width: 350px;
+    }
+
+    .div-footer-container {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 1000px) {
+    .div-info-container,
+    .redes-container{
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .turno-logo-container {
+        justify-content: center;
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+    }
+}
+    .div-footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        gap: 100px;
+    }
+
+    .h4-contact-footer, .h4-redes-footer{
+        width: fit-content;
+    }
+    .p-footer{
+        width: auto;    
+        font-size: 0.9rem;
+    }
+    .div-info-container {
+        width: 250px;
+    }
+
+    .redes-container {
+        width: 180px;
+        text-align: center;
+    }
+
+    .turno-logo-container {
+        width: 250px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .button-footer {
+        width: 160px;
+        height: 50px;
+        font-size: 20px;
+        flex-shrink: 0;
+    }
+
+    .img-logo-footer {
+        width: 100px;
+        height: 100px;
+        flex-shrink: 0;
+    }
+
+@media (max-width: 903px) {
+        .div-footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        gap: 50px;
+    }
+}
+
+@media(max-width: 764px){
+        .div-footer-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        gap: 50px;
+    }
+    .redes-container{
+        width: 250px;
+    }
+    .turno-logo-container{
+        width: 250px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 15px;
+        justify-content: space-between;
+    }
+}

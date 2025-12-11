@@ -17,15 +17,33 @@
     align-items: center;
 }
 
+<<<<<<< HEAD
 /* h2, div form textarea, .form-input{
     border-left: 2px solid #D9A441;
     border-bottom: 0px;
     border-right: 0px;
     border-top: 0px;
+=======
+.h4-form{
+    border: none;
+    border-left: 2px solid var(--color-destacar);
+    padding-left: 10px;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-family: var(--font-principal);
+    font-weight: 100;
+>>>>>>> 75550e5381029ca0f80b9bad38681d83ab6e83d2
     color: white;
+}
+
+.textarea, .form-input{
+    border: none;
+    border-left: 2px solid var(--color-destacar);
     font-size: 16px;
     text-align: center;
     width: 400px;
+<<<<<<< HEAD
 } */
 
 /* h2{
@@ -37,6 +55,12 @@
 } */
 
 div form textarea{
+=======
+    font-family: var(--font-secundaria);
+}
+
+.textarea{
+>>>>>>> 75550e5381029ca0f80b9bad38681d83ab6e83d2
     background-color: #223B4F;
 }
 
@@ -56,7 +80,7 @@ input::placeholder, textarea::placeholder {
     margin: 0;
     cursor: pointer;
     background-color: #223B4F;
-    border-left: 2px solid #D9A441;
+    border-left: 2px solid var(--color-destacar);
     color: white;
     border-bottom: 0px;
     border-right: 0px;
@@ -67,4 +91,31 @@ input::placeholder, textarea::placeholder {
 
 .form-button:hover {
     background-color: #2e526b;
+}
+
+/* QUERYS */
+
+@media (max-width: 903px) {
+    .iframe-div, .form-div{
+        width: 100%;
+    }
+}
+
+@media (max-width: 834px) {
+    .form-container{
+    flex-direction: column-reverse;
+    height: 800px;
+    }
+    .form-iframe{
+        height:205px !important; 
+    }
+    .iframe-div{
+        height: 205px;
+    }
+}
+
+@media(max-width: 414px){
+    .h4-form, .form-input, .textarea{
+        width: 100%;
+    }
 }
