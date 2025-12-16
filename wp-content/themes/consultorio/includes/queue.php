@@ -17,6 +17,7 @@ function enqueue_theme_styles() {
     wp_register_style( 'lora', 'https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap', array(), null );
 
     // Register styles Componentes y Globals
+    wp_register_style( 'nav-bar', get_template_directory_uri() . '/css/components/nav-bar.css' );
     wp_register_style( 'quien-soy', get_template_directory_uri() . '/css/components/quien-soy.css' );
     wp_register_style( 'especialidades', get_template_directory_uri() . '/css/components/especialidades.css' );
     wp_register_style( 'hero-banner', get_template_directory_uri() . '/css/components/hero-banner.css' );
@@ -35,6 +36,7 @@ function enqueue_theme_styles() {
     // enqueue styles
     
     //Estilos globales y de Componentes
+    wp_enqueue_style( 'nav-bar' );
     wp_enqueue_style( 'quien-soy' );
     wp_enqueue_style( 'especialidades' );
     wp_enqueue_style( 'hero-banner' );
@@ -64,6 +66,8 @@ function enqueue_theme_scripts() {
     // wp_enqueue_script( 'views');
     wp_register_script('faqs', get_template_directory_uri() . '/js/libraries/faqs.js', array(), '1.0', true);
     wp_enqueue_script('faqs');
+    wp_register_script('nav-bar', get_template_directory_uri() . '/js/libraries/nav-bar.js', array(), '1.0', true);
+    wp_enqueue_script('nav-bar');
 
 }
 

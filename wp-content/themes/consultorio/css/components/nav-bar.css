@@ -1,0 +1,144 @@
+
+
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    background-color: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+.main-header.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+.nav-bar{
+    padding: 8px 0;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.nav-links a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 4px !important;
+    font-family: var(--font-principal);
+    font-size: 18px;
+    display: inline-block;
+    padding: 0 7px;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* base */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 9px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -9px);
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+    .main-header {
+        background-color: transparent;
+        backdrop-filter: none;
+        transform: translateY(0) !important;
+        opacity: 1 !important;
+    }
+
+    .hamburger {
+        display: flex;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(34, 59, 79, 0.9);
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        transition: right 0.4s ease;
+    }
+
+    .nav-links.open {
+        right: 0;
+    }
+
+    .nav-links a {
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+        padding-bottom: 4px !important;
+        font-family: var(--font-principal);
+        font-size: 25px;
+        display: inline-block;
+        padding: 0 7px;
+    }
+}
+
+
+
+
+

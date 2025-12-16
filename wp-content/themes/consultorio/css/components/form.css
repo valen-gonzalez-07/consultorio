@@ -3,70 +3,65 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    height: 400px;
 }
 
 .iframe-div, .form-div{
     width: 50%;
 }
-
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .form-div{
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 0;
 }
 
-<<<<<<< HEAD
-/* h2, div form textarea, .form-input{
-    border-left: 2px solid #D9A441;
-    border-bottom: 0px;
-    border-right: 0px;
-    border-top: 0px;
-=======
 .h4-form{
     border: none;
     border-left: 2px solid var(--color-destacar);
     padding-left: 10px;
     font-size: 22px;
-    margin-top: 25px;
     margin-bottom: 10px;
     font-family: var(--font-principal);
-    font-weight: 100;
->>>>>>> 75550e5381029ca0f80b9bad38681d83ab6e83d2
     color: white;
 }
 
 .textarea, .form-input{
     border: none;
     border-left: 2px solid var(--color-destacar);
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     width: 400px;
-<<<<<<< HEAD
-} */
-
-/* h2{
-    padding-left: 10px;
-    font-size: 22px;
-    text-align: start;
-    margin-top: 25px;
-    margin-bottom: 10px;
-} */
-
-div form textarea{
-=======
     font-family: var(--font-secundaria);
+    color: #fff;
 }
 
-.textarea{
->>>>>>> 75550e5381029ca0f80b9bad38681d83ab6e83d2
+.textarea {
+    width: 100%;
+    min-height: 140px;
+    max-height: 140px;
+    resize: vertical;
+    box-sizing: border-box;
+    padding: 12px;
+    font-family: var(--font-secundaria);
+    font-size: 14px;
+    line-height: 1.2;
     background-color: #223B4F;
+    color: #fff;
 }
+
 
 .form-input{
     background-color: #223B4F;
     height: 30px;
+}
+.form-iframe{
+    height: 100%;
 }
 
 input::placeholder, textarea::placeholder {
@@ -74,7 +69,6 @@ input::placeholder, textarea::placeholder {
 }
 
 .form-button{
-    width: 90px;
     height: 35px;
     padding: 0;
     margin: 0;
@@ -85,13 +79,22 @@ input::placeholder, textarea::placeholder {
     border-bottom: 0px;
     border-right: 0px;
     border-top: 0px;
-    margin-bottom: 10px;
     transition: all 0.2s ease;
+    font-family: var(--font-secundaria);
 }
 
 .form-button:hover {
     background-color: #2e526b;
 }
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
 
 /* QUERYS */
 
@@ -99,12 +102,17 @@ input::placeholder, textarea::placeholder {
     .iframe-div, .form-div{
         width: 100%;
     }
+    .form-input{
+        width: 350px;
+    }
 }
 
 @media (max-width: 834px) {
     .form-container{
     flex-direction: column-reverse;
-    height: 800px;
+    }
+    .form-div{
+        padding: 40px 0;
     }
     .form-iframe{
         height:205px !important; 
@@ -112,10 +120,18 @@ input::placeholder, textarea::placeholder {
     .iframe-div{
         height: 205px;
     }
+    .form-input{
+        width: 400px;
+    }
 }
 
 @media(max-width: 414px){
-    .h4-form, .form-input, .textarea{
+    .form{
+        width: 95%;
+    }
+    
+    .form-input, .textarea{
         width: 100%;
     }
 }
+

@@ -18,6 +18,22 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-	<div id="wrapper">
+	<header class="main-header">
+		<nav class="nav-bar">
+			<ul class="nav-links">
+				<li><a href="#hero-banner">Inicio</a></li>
+				<li><a href="#especialidades">Especialidades</a></li>
+				<li><a href="#quien-soy">Quién soy</a></li>
+				<li><a href="#contacto">Contacto</a></li>
+			</ul>
+
+			<button class="hamburger" aria-label="Abrir menú">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</nav>
+	</header>
+
 
 

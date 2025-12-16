@@ -1,11 +1,6 @@
-<?php 
-/**
- * Template Name: Dega
- */
-get_header();
-?>
 
-<section class="hero-banner">
+
+<section class="hero-banner" id="hero-banner">
     <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/imgs/fondo-hero.jpg' ); ?>" alt="" class="hero-image">
 
     <div class="hero-content">
@@ -14,7 +9,7 @@ get_header();
     </div>
 </section>
 
-<section class="especialidades">
+<section class="especialidades" id="especialidades">
     <header class="especialidades-header">
         <h2>Mis especialidades</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam soluta odit id natus tempora, voluptatum earum ad libero debitis eligendi veritatis sequi, et alias sit, magni enim cupiditate minus. Eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sed fuga autem fugiat odit vero, aperiam provident id eos aspernatur mollitia dicta soluta, dolorum eveniet, omnis qui? Incidunt, facilis rerum!</p>
@@ -59,7 +54,7 @@ get_header();
     </article>
 </section>
 
-<section class="quien-soy">
+<section class="quien-soy" id="quien-soy">
     <div class="nube-i"><figure><img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/nube-izquierda-2.png"" alt="" class=""></figure></div>
     <div class="quien-soy-contenedor">
         <figure>
@@ -86,8 +81,3 @@ get_header();
     
 </section>
 
-
-
-<?php 
-get_footer();
-?>
